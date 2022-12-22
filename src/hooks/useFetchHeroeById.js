@@ -22,7 +22,6 @@ const useFetchHeroeById = () => {
 
 
   useEffect(() => {
-    console.log('entro:::: useFetchHeroeById useEffect')
     laodHeroeById()
   }, [id])
 

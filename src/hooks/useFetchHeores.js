@@ -18,7 +18,6 @@ const useFetchHeores = () => {
   }
 
   useEffect(() => {
-    console.log('entro:::: useEffect')
     laodHeroes()
   }, [])
 
