@@ -6,9 +6,9 @@ const Appearance = ({ title, appearance }) => {
   return (
     <Box mb={2}>
       <Typography color='primary' variant="h6" component="h6" gutterBottom>{title}</Typography>
-      <Typography><b>Race:</b> {race} </Typography>
-      <Typography><b>Gender:</b> {gender} </Typography>
-      <Typography><b>Height:</b> {height[1]} <b>Weight:</b> {weight[1]}</Typography>
+      <Typography aria-label='race'><b>Race:</b> {race} </Typography>
+      <Typography aria-label='gender'><b>Gender:</b> {gender} </Typography>
+      <Typography aria-label='heightWeight'><b>Height:</b> {height[1]} <b>Weight:</b> {weight[1]}</Typography>
     </Box>
   )
 }

@@ -6,10 +6,10 @@ const Biography = ({ title, biography }) => {
   return (
     <Box mb={2}>
       <Typography color='primary' variant="h6" component="h6" gutterBottom>{title}</Typography>
-      <Typography><b>Full Name:</b> {fullName}</Typography>
-      <Typography><b>Ater Egos:</b> {alterEgos} </Typography>
-      <Typography><b>Publisher:</b> {publisher} </Typography>
-      <Typography><b>Alignment:</b> {alignment}</Typography>
+      <Typography aria-label='fullName'><b>Full Name:</b> {fullName}</Typography>
+      <Typography aria-label='alterEgos'><b>Alter Egos:</b> {alterEgos} </Typography>
+      <Typography aria-label='publisher'><b>Publisher:</b> {publisher} </Typography>
+      <Typography aria-label='alignment'><b>Alignment:</b> {alignment}</Typography>
     </Box>  
   )
 }

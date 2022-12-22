@@ -6,8 +6,8 @@ const Connections = ({ title, connections }) => {
   return (
     <Box mb={2}>
       <Typography color='primary' variant="h6" component="h6" gutterBottom>{title}</Typography>
-      <Typography><b>Group </b>Affiliation: {groupAffiliation} </Typography>
-      <Typography><b>Relatives:</b> {relatives}</Typography>          
+      <Typography aria-label='group'><b>Group </b>Affiliation: {groupAffiliation} </Typography>
+      <Typography aria-label='relatives'><b>Relatives:</b> {relatives}</Typography>          
     </Box>  
   )
 }
