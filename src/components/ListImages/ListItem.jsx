@@ -1,6 +1,7 @@
-import { Grid, ImageListItem, ImageListItemBar, Stack, Typography } from '@mui/material'
+import PropTypes from 'prop-types'
 import ItemSubtitle from './ItemSubtitle'
 import ItemTitle from './ItemTitle'
+import { Grid, ImageListItem, ImageListItemBar } from '@mui/material'
 
 const ListItem = ({ heroe, handleDetailHeroe }) => {
   const { id, images, name, appearance } = heroe
@@ -16,6 +17,11 @@ const ListItem = ({ heroe, handleDetailHeroe }) => {
       </ImageListItem>        
     </Grid>
   )
+}
+
+ListItem.propTypes = {
+  heroe: PropTypes.object.isRequired,
+  handleDetailHeroe: PropTypes.func.isRequired
 }
 
 export default ListItem
